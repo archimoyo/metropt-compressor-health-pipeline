@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# project
+data/
+.env
+kaggle.json
+*.tfstate
+*.tfstate.*
+.terraform/
+tfplan
+dbt/**/target/
+dbt/**/logs/
+dbt/**/dbt_packages/

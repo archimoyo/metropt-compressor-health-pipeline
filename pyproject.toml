@@ -1,0 +1,33 @@
+[project]
+name = "metropt-compressor-health-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Archibald Moyo", email = "219442063+archimoyo@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "awswrangler>=3.17.1",
+    "boto3>=1.43.118",
+    "kaggle>=1.8.0",
+    "pandas>=3.1.0",
+    "pyarrow>=25.0.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+metropt-compressor-health-pipeline = "metropt_compressor_health_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pre-commit>=4.7.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
